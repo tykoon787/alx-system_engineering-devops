@@ -35,3 +35,6 @@
 
 ### 11-lists
 > This will list the files in `.` `..` and `/boot`
+
+### 12-file_type
+> This will print the type of the file `iamafile`

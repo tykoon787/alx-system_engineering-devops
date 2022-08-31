@@ -38,3 +38,6 @@
 
 ### 12-file_type
 > This will print the type of the file `iamafile`
+
+### 13-symbolic_link
+> This script will create a link to `/bin/ls`

@@ -53,3 +53,6 @@
 
 ### 102-tree
 > This script will create two directories in the `cwd` and a file in one of created directories
+
+### 103-commas
+> This script will print all files and directories separated with commas and with directories ending with `\`

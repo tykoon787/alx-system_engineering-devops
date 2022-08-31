@@ -23,3 +23,6 @@
 
 ### 7-movethatfile
 > This script will move a file called `betty` from the `/tmp` folder to the `/tmp/my_first_directory` folder
+
+### 8-firstdelete
+> This script will delete the file called `betty` from the `/tmp/my_first_directory` folder

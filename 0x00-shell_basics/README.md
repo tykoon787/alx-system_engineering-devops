@@ -29,3 +29,6 @@
 
 ### 9-firstdirdeletion
 > This script will delete the folder `my_first_directory` from the `/tmp` folder
+
+### 10-back
+> This script will go back to the previous working directory

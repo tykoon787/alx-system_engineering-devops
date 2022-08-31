@@ -8,3 +8,6 @@
 
 ### 2-bring_me_home
 > This script will change the cwd to the home directory 
+
+### 3-listfiles
+> This script will list the files in the cwd in long format

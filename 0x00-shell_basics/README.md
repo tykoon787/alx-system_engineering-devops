@@ -26,3 +26,6 @@
 
 ### 8-firstdelete
 > This script will delete the file called `betty` from the `/tmp/my_first_directory` folder
+
+### 9-firstdirdeletion
+> This script will delete the folder `my_first_directory` from the `/tmp` folder

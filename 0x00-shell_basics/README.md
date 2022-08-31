@@ -47,3 +47,6 @@
 
 ### 100-lets_move
 > This script will move all files with an upper case letter to `/tmp/u`
+
+### 101-clean_emacs
+> This script will delete all files with the `~` extenstion

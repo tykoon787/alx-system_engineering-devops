@@ -44,3 +44,6 @@
 
 ### 14-copy_html
 > This script will copy all html files from `.` to `..`
+
+### 100-lets_move
+> This script will move all files with an upper case letter to `/tmp/u`

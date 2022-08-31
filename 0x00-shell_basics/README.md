@@ -32,3 +32,6 @@
 
 ### 10-back
 > This script will go back to the previous working directory
+
+### 11-lists
+> This will list the files in `.` `..` and `/boot`

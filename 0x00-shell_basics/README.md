@@ -41,3 +41,6 @@
 
 ### 13-symbolic_link
 > This script will create a link to `/bin/ls`
+
+### 14-copy_html
+> This script will copy all html files from `.` to `..`

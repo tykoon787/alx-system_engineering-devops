@@ -14,3 +14,6 @@
 
 ### 4-listmorefiles 
 > This script will list all files (including hidden files) in the long format
+
+### 5-listfilesdigitsonly
+> This script will list all files with USER and GROUP ID's displayed

@@ -11,3 +11,6 @@
 
 ### 3-listfiles
 > This script will list the files in the cwd in long format
+
+### 4-listmorefiles 
+> This script will list all files (including hidden files) in the long format

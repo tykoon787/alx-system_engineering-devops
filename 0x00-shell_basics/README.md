@@ -50,3 +50,6 @@
 
 ### 101-clean_emacs
 > This script will delete all files with the `~` extenstion
+
+### 102-tree
+> This script will create two directories in the `cwd` and a file in one of created directories

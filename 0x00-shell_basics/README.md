@@ -17,3 +17,6 @@
 
 ### 5-listfilesdigitsonly
 > This script will list all files with USER and GROUP ID's displayed
+
+### 6-firstdirectory
+> This script will create a directory in the /tmp folder

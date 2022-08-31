@@ -20,3 +20,6 @@
 
 ### 6-firstdirectory
 > This script will create a directory in the /tmp folder
+
+### 7-movethatfile
+> This script will move a file called `betty` from the `/tmp` folder to the `/tmp/my_first_directory` folder

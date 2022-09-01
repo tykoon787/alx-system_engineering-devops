@@ -23,3 +23,6 @@
 
 ### 7-everybody
 > This script will add executable permissions to the owner, group and other users
+
+### 8-James_Bond 
+> This script will add `rwx` permissions only to other users

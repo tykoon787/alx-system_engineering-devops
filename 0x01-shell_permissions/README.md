@@ -50,3 +50,6 @@
 
 ### 102-if_only
 > This script will change the ownership of a file only if it is owned by the said user
+
+### 103-star_wars
+> This script will play star wars in the terminal

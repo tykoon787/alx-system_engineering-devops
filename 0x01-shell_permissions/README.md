@@ -47,3 +47,6 @@
 
 ### 101-symbolic_link_permissions
 > This script will change the owner and group of sybmolic link
+
+### 102-if_only
+> This script will change the ownership of a file only if it is owned by the said user

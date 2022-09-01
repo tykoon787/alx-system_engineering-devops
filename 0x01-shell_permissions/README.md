@@ -17,3 +17,6 @@
 
 ### 5-execute
 > This script will add the executable attribute to the owner
+
+### 6-multiple_permissions
+> This script will add executable permissions to the owner and group

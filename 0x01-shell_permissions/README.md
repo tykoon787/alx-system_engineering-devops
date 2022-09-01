@@ -44,3 +44,6 @@
 
 ### 100-change_owner_and_group
 > This script changes the owner and group of a file
+
+### 101-symbolic_link_permissions
+> This script will change the owner and group of sybmolic link

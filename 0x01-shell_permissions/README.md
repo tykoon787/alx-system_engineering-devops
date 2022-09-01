@@ -32,3 +32,6 @@
 
 ### 10-mirror_permissions
 > This script will mirror permissions for file `olleh` to `hello`
+
+### 11-directories_permissions
+> This script will add executable permissions to the owner, group and other users

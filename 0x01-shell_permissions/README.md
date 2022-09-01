@@ -29,3 +29,6 @@
 
 ### 9-John_Doe
 > This script will print set permissions to `rwxrx-wx` for file `hello`
+
+### 10-mirror_permissions
+> This script will mirror permissions for file `olleh` to `hello`

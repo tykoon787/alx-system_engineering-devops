@@ -35,3 +35,6 @@
 
 ### 11-directories_permissions
 > This script will add executable permissions to the owner, group and other users
+
+### 12-directory_permissions
+> This script will create a directory called `my_dir` with permissions set to `751` or `rwx r-x --x`

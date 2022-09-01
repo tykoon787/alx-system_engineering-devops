@@ -20,3 +20,6 @@
 
 ### 6-multiple_permissions
 > This script will add executable permissions to the owner and group
+
+### 7-everybody
+> This script will add executable permissions to the owner, group and other users

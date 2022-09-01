@@ -26,3 +26,6 @@
 
 ### 8-James_Bond 
 > This script will add `rwx` permissions only to other users
+
+### 9-John_Doe
+> This script will print set permissions to `rwxrx-wx` for file `hello`

@@ -11,3 +11,6 @@
 
 ### 3-new_owner
 > This script changes the owner of the file `hello` to `betty`
+
+### 4-empty
+> This script creates an empty file called `hello`

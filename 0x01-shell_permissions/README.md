@@ -39,5 +39,8 @@
 ### 12-directory_permissions
 > This script will create a directory called `my_dir` with permissions set to `751` or `rwx r-x --x`
 
-### 13-change_gropu
+### 13-change_group
 > This script will change the group of the directory
+
+### 100-change_owner_and_group
+> This script changes the owner and group of a file

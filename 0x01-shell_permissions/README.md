@@ -14,3 +14,6 @@
 
 ### 4-empty
 > This script creates an empty file called `hello`
+
+### 5-execute
+> This script will add the executable attribute to the owner

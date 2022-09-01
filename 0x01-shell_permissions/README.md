@@ -8,3 +8,6 @@
 
 ### 2-groups 
 > This script will print the groups the current user belongs to 
+
+### 3-new_owner
+> This script changes the owner of the file `hello` to `betty`

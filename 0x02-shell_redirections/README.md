@@ -29,3 +29,6 @@
 
 ## 9-duplicate_last_line
 > This script will duplicate the lastline of the file `iacta`
+
+## 10-no_more_js
+> This script will delete all files in the `cwd` with a `.js` extension

@@ -20,3 +20,6 @@
  
 ## 6-third_line
 > This script will display the third line of the file `iacta`
+
+## 7-file
+> It's a good file that cuts iron without making noise

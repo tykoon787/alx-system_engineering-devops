@@ -47,3 +47,6 @@
 
 ## 15-countthatword
 > This scrit will count the number of lines containing the patter `bin`
+
+## 16-whatsnext 
+> This script will find the pattern of the word `root` and three words after

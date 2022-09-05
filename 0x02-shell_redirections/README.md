@@ -23,3 +23,6 @@
 
 ## 7-file
 > It's a good file that cuts iron without making noise
+
+## 8-cwd_state
+> This script will write the result of the command `ls -la` into a file

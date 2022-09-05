@@ -35,3 +35,6 @@
 
 ##11-directories
 > This script will count the number of the directories recursivly
+
+## 12-newest_files
+> This script will print the 10 newest files

@@ -53,3 +53,6 @@
 
 ## 17-hidethisword 
 > This script will display all lines that do not contain `bin`
+
+## 18-LettersOnly 
+> This script will display lines that start with a letter 

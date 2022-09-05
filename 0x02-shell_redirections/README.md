@@ -44,3 +44,6 @@
 
 ## 14-findthatword
 > This script will find the pattern of the word `root` from `/etc/passwd`
+
+## 15-countthatword
+> This scrit will count the number of lines containing the patter `bin`

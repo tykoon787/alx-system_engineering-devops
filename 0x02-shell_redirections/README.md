@@ -32,3 +32,6 @@
 
 ## 10-no_more_js
 > This script will delete all files in the `cwd` with a `.js` extension
+
+##11-directories
+> This script will count the number of the directories recursivly

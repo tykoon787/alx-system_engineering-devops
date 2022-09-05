@@ -26,3 +26,6 @@
 
 ## 8-cwd_state
 > This script will write the result of the command `ls -la` into a file
+
+## 9-duplicate_last_line
+> This script will duplicate the lastline of the file `iacta`

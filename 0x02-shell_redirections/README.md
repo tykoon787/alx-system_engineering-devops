@@ -56,3 +56,6 @@
 
 ## 18-LettersOnly 
 > This script will display lines that start with a letter 
+
+##19-AZ
+> Replace all characters A and c from input to Z and e

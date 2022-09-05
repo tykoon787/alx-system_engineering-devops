@@ -38,3 +38,6 @@
 
 ## 12-newest_files
 > This script will print the 10 newest files
+
+## 13-unique
+> This script will print the unique value of a list input

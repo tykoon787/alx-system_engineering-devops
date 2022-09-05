@@ -5,3 +5,6 @@
 
 ## 1-confused_smiley
 > This script will render a `(Ôo)` to stdout
+
+## 2-helloFile 
+> This script will display the contents of the `/etc/passwd` file

@@ -17,3 +17,6 @@
 
 ## 5-firstLines
 > This script will display the first `10` lines of `/etc/passwd`
+ 
+## 6-third_line
+> This script will display the third line of the file `iacta`

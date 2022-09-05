@@ -1,0 +1,2 @@
+#!/bin/bash
+nvim README.md && git add README.md && git commit -m "Updated README.md" && git push -u origin main

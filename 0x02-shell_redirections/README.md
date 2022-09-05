@@ -41,3 +41,6 @@
 
 ## 13-unique
 > This script will print the unique value of a list input
+
+## 14-findthatword
+> This script will find the pattern of the word `root` from `/etc/passwd`

@@ -8,3 +8,6 @@
 
 ## 2-helloFile 
 > This script will display the contents of the `/etc/passwd` file
+
+## 3-twofiles
+> This script will display the contents of two files

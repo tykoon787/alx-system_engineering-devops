@@ -59,3 +59,6 @@
 
 ##19-AZ
 > Replace all characters A and c from input to Z and e
+
+## 20-hiago 
+> I love the humor

@@ -11,3 +11,6 @@
 
 ## 3-twofiles
 > This script will display the contents of two files
+
+## 4-lastlines
+> This script will display the last `10` lines of `/etc/passwd`

@@ -50,3 +50,6 @@
 
 ## 16-whatsnext 
 > This script will find the pattern of the word `root` and three words after
+
+## 17-hidethisword 
+> This script will display all lines that do not contain `bin`

@@ -47,3 +47,6 @@
 
 ## 15-rot13 
 > This script will encode text using the `rot13` cipher
+
+## 16-odd
+> This script prints every other line from the input, starting with the first line.

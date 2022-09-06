@@ -8,3 +8,6 @@
 
 ## 2-path 
 > This script will add `/action` to `PATH`
+
+## 3-path 
+> This script will count the number of directories in `PATH`

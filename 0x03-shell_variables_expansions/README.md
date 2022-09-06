@@ -14,3 +14,6 @@
 
 ## 4-global_variables 
 > This script will print all global variables
+
+## 5-local_variables 
+> This scripts will list all local variables and environment variables and functions

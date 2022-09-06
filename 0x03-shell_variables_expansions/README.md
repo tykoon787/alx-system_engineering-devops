@@ -6,3 +6,5 @@
 ## 1-hello_you
 > This script print the current Linux user
 
+## 2-path 
+> This script will add `/action` to `PATH`

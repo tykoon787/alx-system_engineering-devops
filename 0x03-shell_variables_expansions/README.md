@@ -38,3 +38,6 @@
 
 ## 12-combinations 
 > This scripts  prints all possible combinations of two letters, except `oo`
+
+## 13-print_float
+> This script will found off the value stored in `$NUM` to 2dp

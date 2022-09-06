@@ -65,3 +65,6 @@
  
 ## 21-Reverse 
 > This script will reverse its input `rev`
+
+## 22-users_and_homes
+>This script will displays all users and their home directories, sorted by users.

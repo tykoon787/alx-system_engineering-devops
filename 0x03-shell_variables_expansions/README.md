@@ -44,3 +44,6 @@
 
 ## 14-decimal_to_hexadecimal
 > This script will convert a stored value from decimal to hexadecimal
+
+## 15-rot13 
+> This script will encode text using the `rot13` cipher

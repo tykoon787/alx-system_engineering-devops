@@ -29,3 +29,6 @@
 
 ## 9-divide_and_rule
 > This script prints the result of `$POWER` divided by `$DIVIDE`
+
+## 10-love_exponent_breath
+> This script prints the result of `4` to the power of `3`

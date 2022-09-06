@@ -11,3 +11,6 @@
 
 ## 3-path 
 > This script will count the number of directories in `PATH`
+
+## 4-global_variables 
+> This script will print all global variables

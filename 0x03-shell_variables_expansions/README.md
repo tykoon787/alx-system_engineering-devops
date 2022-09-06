@@ -26,3 +26,6 @@
 
 ## 8-true_knowledge 
 > This scripts adds `128` to the global variable `TRUEKNOWLEDGE`
+
+## 9-divide_and_rule
+> This script prints the result of `$POWER` divided by `$DIVIDE`

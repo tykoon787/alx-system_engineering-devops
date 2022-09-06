@@ -33,6 +33,8 @@
 ## 10-love_exponent_breath
 > This script prints the result of `4` to the power of `3`
 
-##11-binary_to_decimal
+## 11-binary_to_decimal
 > This script converts a binary value to decimal
 
+## 12-combinations 
+> This scripts  prints all possible combinations of two letters, except `oo`

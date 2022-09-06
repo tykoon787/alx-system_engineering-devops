@@ -17,3 +17,6 @@
 
 ## 5-local_variables 
 > This scripts will list all local variables and environment variables and functions
+
+## 6-create_local_variables 
+> This script creates a new local variable 

@@ -41,3 +41,6 @@
 
 ## 13-print_float
 > This script will found off the value stored in `$NUM` to 2dp
+
+## 14-decimal_to_hexadecimal
+> This script will convert a stored value from decimal to hexadecimal

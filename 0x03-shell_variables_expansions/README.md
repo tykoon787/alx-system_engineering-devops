@@ -50,3 +50,6 @@
 
 ## 16-odd
 > This script prints every other line from the input, starting with the first line.
+
+## 17-water_and_stir
+> Adds two numbers and prints results in base `bestchol`

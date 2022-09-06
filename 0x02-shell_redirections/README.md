@@ -62,3 +62,6 @@
 
 ## 20-hiago 
 > I love the humor
+ 
+## 21-Reverse 
+> This script will reverse its input `rev`

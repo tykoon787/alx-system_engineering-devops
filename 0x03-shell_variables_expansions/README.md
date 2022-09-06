@@ -20,3 +20,6 @@
 
 ## 6-create_local_variables 
 > This script creates a new local variable 
+
+## 7-create_global_variables 
+> This script creates a new global variable

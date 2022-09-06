@@ -23,3 +23,6 @@
 
 ## 7-create_global_variables 
 > This script creates a new global variable
+
+## 8-true_knowledge 
+> This scripts adds `128` to the global variable `TRUEKNOWLEDGE`

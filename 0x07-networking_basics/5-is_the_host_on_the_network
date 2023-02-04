@@ -7,6 +7,6 @@ then
 	echo "Usage: 5-is_the_host_on_the_network {IP_ADDRESS}"
 	exit 1
 else
-	ping $ADDRESS -c 5
+	ping "$ADDRESS" -c 5
 fi
 

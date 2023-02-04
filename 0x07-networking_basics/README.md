@@ -14,3 +14,6 @@
 
 ## 4-TCP_and_UDP
 > Ports
+
+## 5-is_the_host_on_the_network
+> Ping given address

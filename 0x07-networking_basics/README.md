@@ -2,3 +2,9 @@
 
 ## 0-OSI_model
 > What is the OSI Model and How is it organized?
+
+## 1-types_of_network
+> Types of Network
+
+## 2-MAC_and_IP_address
+> 2-MAC_and_IP_address

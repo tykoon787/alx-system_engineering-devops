@@ -1,4 +1,2 @@
-#!/usr/bin/env bash
-#Answers the question, How is the OSI Model Organized
-echo 2
-echo 3
+2
+3

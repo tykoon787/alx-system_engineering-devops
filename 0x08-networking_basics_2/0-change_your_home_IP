@@ -7,7 +7,5 @@ if [ "$EUID" -ne 0 ]
 fi
 
 cp /etc/hosts /etc/hosts.bak
-echo "Created Backup of Host file"
-
 echo "127.0.0.2 localhost" >> /etc/hosts
 echo "8.8.8.8 facebook.com" >> /etc/hosts

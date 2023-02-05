@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+#Gets a list of all Ipv4 listeninig
+
+interfaces=$(ifconfig | awk -F ' ' '/^[a-z]/ && !/^lo/ {print $1}')
+
+for interface in $interfaces
+do
+	ip=$(ifconfig "$interface" | awk '/inet / {print $2}')
+
+	echo "$interface: $ip"
+done

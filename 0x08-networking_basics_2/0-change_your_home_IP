@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+#A bash script that changes local host 127.0.0.2 and facebook to 8.8.8.8
+
+if [ "$EUID" -ne 0 ]
+	then echo "This must be run as root"
+	exit
+fi
+
+cp /etc/hosts /etc/hosts.bak
+echo "Created Backup of Host file"
+
+echo "127.0.0.2 localhost" >> /etc/hosts
+echo "8.8.8.8 facebook.com" >> /etc/hosts

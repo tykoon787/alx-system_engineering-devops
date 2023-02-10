@@ -12,3 +12,5 @@
 ## 3-show_your_bash_pid_made_easy
 > Displays PID with bash as the process name
 
+## 4-to_infinity_and_beyond
+> Prints To infinity and beyond within a 2 sec delay

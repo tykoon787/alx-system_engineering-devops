@@ -17,3 +17,6 @@
 
 ## 5-dont_stop_me_now
 > Kills task 4
+
+## 6-Stop_me_if_you_can
+> With pleasure. (dialing :phone) Thank you for calling Pkill, whats your emergency?

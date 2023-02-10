@@ -29,3 +29,6 @@
 
 ## 9-to_file_or_not_to_file
 > Checks if a file exist, is empty
+
+## FizzBuzz
+> FizzBuzz

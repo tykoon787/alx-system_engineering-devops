@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+# Superstitous Numbers
+
+valid=true
+counter=1
+while [ $valid ]
+do
+    if [ $counter -eq 21 ];
+    then
+    break
+    else
+    echo $counter
+    fi
+    case $counter in
+        4)
+        echo "bad luck from China" ;;
+        9)
+        echo "bad luck from Japan" ;;
+        17)
+        echo "bad luck from Italy" ;;
+    esac
+((counter++))
+done

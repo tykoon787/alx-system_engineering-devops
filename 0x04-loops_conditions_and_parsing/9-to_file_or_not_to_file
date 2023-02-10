@@ -1,21 +1,31 @@
 #!/usr/bin/env bash
 # To file or not to file
 
-filename=$1
+pwd="$(pwd)"
+ls="$(ls "$pwd")"
+name_of_file="school"
 
-if [  -e "$filename" ]
-then
-    echo "$filename exists"
-    if [ -s "$filename" ]
+for filename in $ls
+do
+    if [ "$filename" == "$name_of_file" ]
     then
-        echo "$filename is not empty"
-    else :
-        echo "$filename is empty"
+        checkfile="$name_of_file"
     fi
-    if [ -f "$filename" ]
+done       
+
+if [ -e "$checkfile" ]
+then
+    echo "$checkfile file exists"
+    if [ -s "$checkfile" ]
     then
-        echo "$filename is a regular file"
+        echo "$checkfile is not empty"
+    else :
+        echo "$checkfile is empty"
+    fi
+    if [ -f "$checkfile" ]
+    then
+        echo "$checkfile is a regular file"
     fi
 else :
-    echo "$filename does not exixt"
+    echo "$checkfile does not exist"
 fi

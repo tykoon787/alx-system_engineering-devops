@@ -8,3 +8,6 @@
 
 ## 2-while_best_school
 > Bash script that displays Best School 10 times
+
+## 3-until_best_school
+> Bash script that displays Best School 10 times

@@ -14,3 +14,6 @@
 
 ## 4-if_9_say_hi
 > Bash script that displays Best School 10 times, but for the 9th iteration, displays Best School and then Hi on a new line.
+
+## 5-4_bad_luck_8_is_your_chance
+> Print bad luck in place of 4 and goodluck in place of 8

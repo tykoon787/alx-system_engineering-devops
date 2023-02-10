@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# This scripts prints the currently running process in user-oriented format
+ps -u

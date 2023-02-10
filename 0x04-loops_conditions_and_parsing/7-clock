@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Display time
-hour=1
+hour=0
 minutes=1
 
 while [ $hour -le 12 ]

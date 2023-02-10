@@ -7,9 +7,9 @@ while [ $valid ]
 do
     if [ $counter -eq 9 ];
     then
-        echo "hi"
+        echo "Hi"
     else
-        echo "best school"
+        echo "Best School"
     fi
     if [ $counter -eq 10 ];
     then

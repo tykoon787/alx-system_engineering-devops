@@ -17,3 +17,6 @@
 
 ## 5-4_bad_luck_8_is_your_chance
 > Print bad luck in place of 4 and goodluck in place of 8
+
+## 6-superstitious_numbers
+> Superstitious numbers

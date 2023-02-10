@@ -5,3 +5,6 @@
 
 ## 1-list_your_processes
 > Prints out the running processes in user oriented format
+
+## 2-show_your_bash_pid
+> Display line containing bash word

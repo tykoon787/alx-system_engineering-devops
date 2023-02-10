@@ -2,7 +2,7 @@
 # Bash script that displays Best School 10 times.
 
 valid=true
-count=0
+count=1
 while [ "$valid" ]
 do
 echo "Best School"

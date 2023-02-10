@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# To file or not to file
+
+filename=$1
+
+if [  -e "$filename" ]
+then
+    echo "$filename exists"
+    if [ -s "$filename" ]
+    then
+        echo "$filename is not empty"
+    else :
+        echo "$filename is empty"
+    fi
+    if [ -f "$filename" ]
+    then
+        echo "$filename is a regular file"
+    fi
+else :
+    echo "$filename does not exixt"
+fi

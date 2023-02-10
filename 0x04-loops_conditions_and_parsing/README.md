@@ -20,3 +20,6 @@
 
 ## 6-superstitious_numbers
 > Superstitious numbers
+
+## 7-Clock
+> Clock

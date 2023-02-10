@@ -18,14 +18,14 @@ then
     echo "$checkfile file exists"
     if [ -s "$checkfile" ]
     then
-        echo "$checkfile is not empty"
+        echo "$checkfile file is not empty"
     else :
-        echo "$checkfile is empty"
+        echo "$checkfile file is empty"
     fi
     if [ -f "$checkfile" ]
     then
         echo "$checkfile is a regular file"
     fi
 else :
-    echo "$checkfile does not exist"
+    echo "$checkfile file does not exist"
 fi

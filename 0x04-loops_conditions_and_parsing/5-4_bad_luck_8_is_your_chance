@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # A script that prints bad luck at number 4 and goodluck at number 8 
 valid=true
-counter=0
+counter=1
 while [ $valid ]
 do
     if [ $counter -eq 4 ];
@@ -10,7 +10,7 @@ do
     elif [ $counter -eq 8 ];
     then
         echo "good luck"
-    elif [ $counter -eq 10 ];
+    elif [ $counter -eq 11 ];
     then
         break
     else :

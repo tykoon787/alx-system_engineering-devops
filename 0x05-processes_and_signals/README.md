@@ -8,3 +8,7 @@
 
 ## 2-show_your_bash_pid
 > Display line containing bash word
+
+## 3-show_your_bash_pid_made_easy
+> Displays PID with bash as the process name
+

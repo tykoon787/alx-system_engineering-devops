@@ -23,3 +23,6 @@
 
 ## 7-Clock
 > Clock
+
+## 8-for_ls
+> Display files

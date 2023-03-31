@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# A script that configures an Ubuntu Machine with NginX server
+
+# Install Nginx
+sudo apt-get update
+sudo apt-get -y install nginx
+
+# Configure ngix Server
+sudo sed -i 's/# server_names_hash_bucket_size 64;/server_names_hash_bucket_size 64;/' /etc/nginx/nginx.conf
+sudo service nginx restart
+
+# Create index.html file
+echo "<html><body><h1>Hello World!</h1></body></html>" | sudo tee /var/www/html/index.html
+
+# Include redirection of /redirect_me
+new_string="\\\trewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;"
+sudo sed -i "53i $new_string"; /etc/

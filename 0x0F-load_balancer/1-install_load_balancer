@@ -10,7 +10,7 @@ cfg_file=/etc/haproxy/haproxy.cfg
 # Configure the /etc/haproxy/haproxy.cfg
 # Configuration for backend and frontend
 sudo sed -i '$ a\\nbackend lb-01\n\tbalance roundrobin\n\tmode http\n\tserver web-01 52.87.215.121:80 check\n\tserver web-02 54.160.79.52:80 check\n\
-frontend http\n\tbind *:80\n\tmode http\n\n\t use_backend lb-01' "$cfg_file"
+frontend http\n\tbind *:80\n\tmode http\n\n\tuse_backend lb-01' "$cfg_file"
 
 # Load the config file
 sudo haproxy -f "$cfg_file"

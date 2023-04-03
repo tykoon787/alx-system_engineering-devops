@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+# Configure a new Nginx server so that /redirect_me is redirecting to another page.
+
+# Install nginx
+sudo apt-get -y update
+# sudo apt-get -y upgrade
+sudo apt-get -y install nginx
+
+# Start nginx if not started
+sudo service nginx start
+
+# Add custom http header
+sudo sed -i '/server_name _;/a\\tadd_header X-Served-By $hostname;' /etc/nginx/sites-available/default
+
+# Custom 404 page
+echo "Ceci n'est pas une page" | sudo tee /var/www/html/404.html
+sudo sed -i '/server_name _;/a\\terror_page 404 /404.html;\n\tlocation = /404.html {\n\t\troot /var/www/html;\n\t\tinternal;\n\t}' /etc/nginx/sites-available/default 
+
+# Redirection
+sudo sed -i '/server_name _;/a\\tlocation \/redirect_me {\n\t\t\treturn 301 https://www.youtube.com/watch?v=QH2-TGUlwu4; \n\t}' /etc/nginx/sites-available/default 
+
+# Restart Service
+sudo service nginx restart
+sudo nginx -s reload

@@ -5,6 +5,9 @@
 sudo apt-get -y update
 sudo apt-get -y install haproxy
 
+# Manage haproxy by an using init.d
+sudo /etc/init.d/haproxy start
+
 cfg_file=/etc/haproxy/haproxy.cfg
 
 # Configure the /etc/haproxy/haproxy.cfg

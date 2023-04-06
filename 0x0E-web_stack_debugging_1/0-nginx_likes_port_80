@@ -1,0 +1,97 @@
+#!/usr/bin/env bash
+# This is a script that is used to fix server
+# configuration errors
+
+# Variables
+countdown=5
+error_log="/tmp/error.log"
+step=1
+
+# Check if server is running
+function server_check() {
+    echo "Checking if server is working on port 80 ... "
+    curl 0:80 2> "$error_log"
+    if [ $? -eq 0 ]; then
+        echo "[OK] Nginx is working fine on port 80"
+        while [ $countdown -gt 0 ]; do
+            echo "Exiting in: $countdown"
+            sleep 1
+            ((countdown--))
+        done
+        exit 0
+    else
+        error=$(cat "$error_log")
+        echo "[ERROR] An Error occurred: $error"
+        printf "\nProceeding to fix error\n"
+
+    fi
+}
+
+# Call function to check server
+server_check
+
+
+# Check if nginx is running
+echo "[$step] Checking if nginx is listening ... "
+if [ $? -eq 0 ]; then
+    # Determine the port that nginx is listening on
+    port=$(netstat -lnp | grep 'nginx' | awk '{print $4}' | cut -d ':' -f2) 
+    echo "[OK] Nginx is Listening on port: $port"
+    ((step++))
+
+    # If port is != 80, start fixing
+    echo "[$step] Chaning listening port to 80 ... "
+    ((step++))
+    if [ "$port" -ne 80 ]; then 
+    ## Start by removing the file at /etc/nginx/sites-enabled/default
+    sites_enabled="/etc/nginx/sites-enabled/default"
+    echo "[$step] Removing file: $sites_enabled"
+    ((step++))
+    rm -f "$sites_enabled" 2> "$error_log"
+        if [ $? -eq 0 ]; then
+            echo "[OK] Successfully removed file"
+        else
+            error=$(cat "$error_log")
+            echo "[ERROR] Error when removing file: $error"
+        fi
+    fi
+    
+    ## Then create a symlink
+    sites_available="/etc/nginx/sites-available/default"
+    echo "[$step] Creating symlink for :$sites_available in $sites_enabled"
+    ln -s "$sites_available" "$sites_enabled" 2> "$error_log"
+    if [ $? -eq 0 ]; then
+        echo "[OK] Symlink created successfully"
+    else
+        error=$(cat "$error_log")
+        printf "[ERROR] An error occurred when creating the symlink: \n%s" "$error"
+    fi
+
+    ## Kill all process
+    ((step++))
+    echo "[$step] Killing all nginx processes"
+    proc=$(pgrep nginx)
+    for i in $proc; do
+        kill -9 "$i"; done
+
+    ## Stop service, just to be sure
+    ((step++))
+    echo "[$step] Stopping service, Just to be sure"
+    sudo service nginx stop
+
+    ## Check configuration files
+    ((step++))
+    echo "[$step] Checking if config files are ok"
+    nginx -t 2> "$error_log"
+    if [ $? -ne 0 ]; then
+        error=$(cat "$error_log")
+        echo "[ERROR] $error"
+    else
+        ((step++))
+        echo "[$step] Starting service ... "
+        service nginx start 2> "$error_log"
+        server_check
+    fi
+else
+    echo "[ERROR] Nginx is not listening"
+fi

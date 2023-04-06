@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # This is a script that is used to fix server
-# configuration errors
+# configuration error of port 80
 
 # Variables
 countdown=5

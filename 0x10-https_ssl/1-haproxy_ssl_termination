@@ -43,6 +43,7 @@ backend lb-01
 	server web-01 52.87.215.121:80 check
 	server web-02 54.160.79.52:80 check
 
+
 frontend https
 	bind *:80
 	bind *:443 ssl crt /etc/haproxy/certs/domain.pem

@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# This script runs the command based on the user
+
+# Args
+USER=$1
+COMMAND=$2
+
+# Script
+if [ "$#" -lt 2 ]
+then
+    echo "Usage: $0 <user> <command>"
+else
+    sudo -u "$USER" "$COMMAND"
+fi

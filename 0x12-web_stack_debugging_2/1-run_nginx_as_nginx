@@ -8,7 +8,12 @@ sudo chown nginx:nginx /etc/nginx/nginx.conf
 sudo chmod 700 /etc/nginx/nginx.conf
 
 # Change the listening port
-sudo sed '/^server {/,/^} s/80/8080/' /etc/nginx/sites-available/default
+sudo sed -i.bak '/^server {/,/^}/ s/80/8080/' /etc/nginx/sites-available/default
+
+# For this specific box, I found that apache2 was listening on port 8080 which made
+# it impossible for nignx to bind that port, so I had to kill it manually
+pkill apache2
 
 # Run the command
+sudo -u nginx service nginx stop
 sudo -u nginx service nginx start

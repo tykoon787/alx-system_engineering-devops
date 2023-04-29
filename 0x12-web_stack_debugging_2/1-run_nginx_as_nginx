@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# This script configures the container to run nginx as the nginx user
+
+# Change ownership of the /etc/nginx/nginx.conf
+sudo chown nginx:nginx /etc/nginx/nginx.conf
+
+# Change permissions to allow rwx for nginx root user
+sudo chmod 700 /etc/nginx/nginx.conf
+
+# Change the listening port
+sudo sed '/^server {/,/^} s/80/8080/' /etc/nginx/nginx.conf
+
+# Run the command
+sudo -u nginx service nginx start

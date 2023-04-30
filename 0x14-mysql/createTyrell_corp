@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# This scirpt runs the createTyrell_corp.sql
+
+# Grant privileges
+echo "Granting CREATE Privilege to holberton_user ... "
+sudo mysql -u holberton_user -p -e "CREATE DATABASE IF NOT EXISTS tyrell_corp;"
+echo "Granting ALL Privileges as root to holberton_user ... "
+sudo mysql -u root -e "GRANT ALL PRIVILEGES ON tyrell_corp.* TO 'holberton_user'@'localhost';"
+
+# Run script
+echo "Running createTyrell_corp.sql"
+sudo mysql -u holberton_user -p < createTyrell_corp.sql
+if [ $? -eq 0 ]
+then
+    echo "Table created succesfully"
+else
+    echo "Operation failed"
+fi

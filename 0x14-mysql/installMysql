@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# This script will install MySQL Version 15.7
+
+# Add the key
+sudo apt-key add signature.key
+
+# Add the repo
+sudo sh -c 'echo "deb http://repo.mysql.com/apt/ubuntu bionic mysql-5.7" >> /etc/apt/sources.list.d/mysql.list'
+
+# Update apt
+sudo apt-get update
+
+# Check versions
+sudo apt-cache policy mysql-server
+
+# Install MySQL 5.7
+sudo apt install -f mysql-client=5.7* mysql-community-server=5.7* mysql-server=5.7*

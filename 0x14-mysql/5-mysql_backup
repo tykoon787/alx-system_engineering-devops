@@ -22,7 +22,7 @@ else
 
     # Archive
     echo "Compressing into tar.gz"
-    tar -czvf "$ar_name" "$backup"
+    tar -czvf "$ar_name" backup.sql
     if [ $? -eq 0 ]; then
         echo "Archive created successfully: $ar_name"
     else

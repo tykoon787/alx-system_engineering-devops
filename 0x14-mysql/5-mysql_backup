@@ -4,7 +4,6 @@
 # Variables
 ar_name="$(date +%d-%m-%Y).tar.gz"
 backup="backup.sql"
-password=$1
 
 # Check No. of args
 if [ $# -lt 1 ]; then
@@ -13,7 +12,7 @@ if [ $# -lt 1 ]; then
 else
     # Dump
     echo "Creating dump"
-    sudo mysqldump -u root -p "$password" --all-databases > "$backup"
+    sudo mysqldump -uroot -p"$1" --all-databases > backup.sql 
     if [ $? -eq 0 ]; then
         echo "Dump Created Successfully"
     else

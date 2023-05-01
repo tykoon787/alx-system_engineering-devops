@@ -33,9 +33,9 @@ def export_json():
             status = task.get("completed", None)
             task_title = task.get("title", "NO TITLE")
             tasks_dict = {}
+            tasks_dict["username"] = employee_username
             tasks_dict["task"] = task_title
             tasks_dict["completed"] = status
-            tasks_dict["username"] = employee_username
             tasks_list.append(tasks_dict)
         records[employee_id] = tasks_list
         with open("todo_all_employees.json", "w") as f:

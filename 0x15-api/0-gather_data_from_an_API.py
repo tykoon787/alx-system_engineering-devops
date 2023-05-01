@@ -35,8 +35,9 @@ def employee_tasks():
             completed_tasks = []
 
             # get employee name
-            if user['id'] == employee_id:
-                employee_name = user['name']
+            id = user.get("id", 1001)
+            if (employee_id == id):
+                employee_name = user.get("name", "NO NAME")
 
                 # Asses Tasks
                 for task in tasks:

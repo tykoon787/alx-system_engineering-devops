@@ -7,18 +7,15 @@ import csv
 import requests
 from sys import argv
 
-USERS_URL = "https://jsonplaceholder.typicode.com/users"
-TODOS_URL = "https://jsonplaceholder.typicode.com/todos"
-
 
 def employee_tasks_csv():
     """
     This function exports the data in csv format
     """
-    users_response = requests.get(USERS_URL)
+    users_response = requests.get("https://jsonplaceholder.typicode.com/users")
     users = users_response.json()
 
-    tasks_response = requests.get(TODOS_URL)
+    tasks_response = requests.get("https://jsonplaceholder.typicode.com/todos")
     tasks = tasks_response.json()
 
     # Check args

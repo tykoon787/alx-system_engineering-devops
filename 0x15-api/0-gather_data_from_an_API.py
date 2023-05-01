@@ -50,6 +50,8 @@ def employee_tasks():
                             completed += 1
                         else:
                             incomplete += 1
+                    else:
+                        continue
                 total = abs(completed + incomplete)
                 print(
                     "Employee {} is done with tasks({}/{}):"

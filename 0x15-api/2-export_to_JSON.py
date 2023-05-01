@@ -41,7 +41,7 @@ def export_json():
                         task_title = task.get("title", "NO TITLE")
                         tasks_dict = {}
                         tasks_dict["task"] = task_title
-                        tasks_dict["completed"] = str(status)
+                        tasks_dict["completed"] = status
                         tasks_dict["username"] = employee_username
                         tasks_list.append(tasks_dict)
                     else:

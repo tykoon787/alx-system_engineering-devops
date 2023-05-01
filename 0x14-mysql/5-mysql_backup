@@ -21,7 +21,7 @@ else
         exit 1
     fi
 
-    # Archieve
+    # Archive
     echo "Compressing into tar.gz"
     tar -czvf "$ar_name" "$backup"
     if [ $? -eq 0 ]; then

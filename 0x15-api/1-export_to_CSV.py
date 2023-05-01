@@ -38,7 +38,7 @@ def employee_tasks_csv():
                     for task in tasks:
                         user_id = task.get("userId", 2002)
                         if (employee_id == user_id):
-                            status = task.get("completed", None)
+                            status = task.get("completed", False)
                             task_title = task.get("title", "NO TITLE")
                             writer.writerow(
                                 [employee_id,

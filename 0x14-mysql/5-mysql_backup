@@ -13,7 +13,7 @@ if [ $# -lt 1 ]; then
 else
     # Dump
     echo "Creating dump"
-    sudo mysqldump -u root -p "$password" --all-databases | sudo tee "$backup" > /dev/null
+    sudo mysqldump -u root -p "$password" --all-databases > "$backup"
     if [ $? -eq 0 ]; then
         echo "Dump Created Successfully"
     else

@@ -57,7 +57,7 @@ def employee_tasks():
                     "Employee {} is done with tasks({}/{}):"
                     .format(employee_name, completed, total))
                 for title in completed_tasks:
-                    print("    {}".format(title))
+                    print("\t {}".format(title))
                 break
             else:
                 continue

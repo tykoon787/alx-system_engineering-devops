@@ -23,7 +23,7 @@ def employee_tasks_csv():
 
     # Check args
     if (len(argv) < 2):
-        print("Usage: {} <employee_id".format(argv[0]))
+        print("Usage: {} <employee_id>".format(argv[0]))
         exit(1)
     else:
         employee_id = int(argv[1])
@@ -43,10 +43,8 @@ def employee_tasks_csv():
                             writer.writerow(
                                 [employee_id,
                                  employee_username,
-                                 status,
+                                 str(status),
                                  task_title])
-                        else:
-                            continue
                 else:
                     continue
 

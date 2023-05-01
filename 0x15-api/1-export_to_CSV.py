@@ -41,7 +41,7 @@ def employee_tasks_csv():
                             status = task.get("completed", False)
                             task_title = task.get("title", "NO TITLE")
                             writer.writerow(
-                                [employee_id,
+                                [user_id,
                                  employee_username,
                                  str(status),
                                  task_title])

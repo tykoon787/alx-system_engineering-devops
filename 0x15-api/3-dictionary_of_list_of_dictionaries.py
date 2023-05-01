@@ -30,13 +30,14 @@ def export_json():
         tasks_list = []
         for task in tasks:
             user_id = task.get("userId", 2002)
-            status = task.get("completed", None)
-            task_title = task.get("title", "NO TITLE")
-            tasks_dict = {}
-            tasks_dict["username"] = employee_username
-            tasks_dict["task"] = task_title
-            tasks_dict["completed"] = status
-            tasks_list.append(tasks_dict)
+            if (employee_id == user_id):
+                status = task.get("completed", None)
+                task_title = task.get("title", "NO TITLE")
+                tasks_dict = {}
+                tasks_dict["username"] = employee_username
+                tasks_dict["task"] = task_title
+                tasks_dict["completed"] = status
+                tasks_list.append(tasks_dict)
         records[employee_id] = tasks_list
         with open("todo_all_employees.json", "w") as f:
             json.dump(records, f)

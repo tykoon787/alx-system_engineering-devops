@@ -3,8 +3,8 @@
 Exports data in csv format
 """
 
-import requests
 import csv
+import requests
 from sys import argv
 
 USERS_URL = "https://jsonplaceholder.typicode.com/users"

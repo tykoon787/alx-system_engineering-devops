@@ -25,7 +25,7 @@ def employee_tasks_csv():
     else:
         employee_id = int(argv[1])
         # Open file for writing
-        with open("USER_ID.csv", "w") as csvfile:
+        with open("{}.csv".format(employee_id), "w") as csvfile:
             writer = csv.writer(csvfile, quoting=csv.QUOTE_ALL)
             for user in users:
                 id = user.get("id", 1001)

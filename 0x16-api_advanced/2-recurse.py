@@ -1,11 +1,13 @@
 #!/usr/bin/python3
-import requests
 """
 Returns a list containing the titles of all hot articles for a given subreddit.
 
 Functions:
     recurse(subreddit, hot_list=[])
 """
+
+
+import requests
 
 
 def recurse(subreddit, hot_list=[], after=None):
